@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Generator</title>
+    <meta name="description" content="A simple random number generator that allows you to set a minimum and maximum value.">
+    <meta name="keywords" content="random number generator, RNG, min max, generate number">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=50&id=107195&format=png" type="image/x-icon">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <h1 class="title">Random Number Generator</h1>
+        <div class="elementcontainer ec1">
+            <label for="" id="displaynumber">0</label>
+        </div>
+        <div class="elementcontainer ec2">
+            <div class="min min-max">
+                <div class="mindisplay min-max-display">Min</div>
+                <div class="minElements min-max-elements">
+                    <button class="min-max-buttons" title="Increase minimum value">+</button>
+                    <input type="text" class="min-max-input" value="1" title="Input a minimum value">
+                    <button class="min-max-buttons" title="Decrease minimum value">-</button>
+                </div>
+            </div>
+            <div class="max min-max">
+                <div class="maxdisplay min-max-display">Max</div>
+                <div class="maxElements min-max-elements">
+                    <button class="min-max-buttons" title="Increase maximum value">+</button>
+                    <input type="text" class="min-max-input" value="6" title="Input a maximum value">
+                    <button class="min-max-buttons" title="Decrease maximum value">-</button>
+                </div>
+            </div>
+        </div>
+        <button class="ec3" id="generate" title="Generate a random number">Generate</button>
+    </div>
+    <a href="https://github.com/Not-Sage" target="_blank">
+        <div class="sage">
+        <img src="https://i.postimg.cc/8zCwSqkR/image.png" alt="Sage's Avatar" class="avatar" title="Sage's Avatar">
+    <p id="sage" title="Sage">Designed by Sage</p>
+    </div>
+    </a>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
+        particlesJS.load('particles-js', 'particles.json', function () {
+  console.log('particles.js loaded');
+});
+
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

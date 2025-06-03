@@ -52,12 +52,16 @@ decnum.addEventListener("click", function() {
 rannum = Math.floor(Math.random() * (parseInt(minvalue.value) - parseInt(maxvalue.value) -1)) + parseInt(maxvalue.value) + 1;
 
 
+let count = 0;
+
 // let rannum;
 generate.addEventListener("click", function() {
     let inputval = document.getElementById("num");
     inputval = Number(inputval.value);
+    count++;
     if(inputval == rannum){
-        disnumber.textContent = `${rannum} is the generated number`;
+        disnumber.textContent = `${rannum} is the generated number and you took ${count} attempts to guess it right!`;
+        count = 0; // Reset count after correct guess
         rannum = Math.floor(Math.random() * (parseInt(minvalue.value) - parseInt(maxvalue.value) -1)) + parseInt(maxvalue.value) + 1;
     }
     else if (inputval < minvalue.value || inputval > maxvalue.value) {

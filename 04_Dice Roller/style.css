@@ -1,0 +1,33 @@
+#container{
+    font-family: monospace;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+button{
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    border: none;
+    box-shadow: 0px 5px 5px 0px #333;
+    color: white;
+    background-color: teal;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:active{
+    box-shadow: 0px 2px 5px 0px #333;
+}
+input{
+    font-size: 1.5rem;
+    width: 10rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0px 0px 5px 0px #333;
+    padding: 0.5rem 0;
+}
+#diceImages{
+    margin-top: 1rem;
+}
